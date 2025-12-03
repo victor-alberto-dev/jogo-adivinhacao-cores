@@ -1,6 +1,6 @@
-const listaCores = ['vermelho', 'azul', 'verde', 'amarelo', 'roxo', 'laranja', 'rosa', 'marrom', 'cinza', 'ciano'];
-
+const listaCores = ['preto', 'vermelho', 'azul', 'verde', 'amarelo', 'roxo', 'laranja', 'rosa', 'marrom', 'cinza', 'ciano']; 
 const mapaCores = {
+    preto: "black",
     vermelho: "red",
     azul: "blue",
     verde: "green",
