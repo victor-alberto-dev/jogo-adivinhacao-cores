@@ -82,7 +82,7 @@ GitHub: https://github.com/victor-alberto-dev
 ## 🌐 Deploy
 
 🔗 Link do jogo no GitHub Pages:  
-*([link](https://victor-alberto-dev.github.io/jogo-adivinhacao-cores/))*
+*([Clique aqui para jogar!](https://victor-alberto-dev.github.io/jogo-adivinhacao-cores/))*
 
 ---
 
