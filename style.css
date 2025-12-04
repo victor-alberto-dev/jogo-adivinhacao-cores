@@ -1,44 +1,107 @@
+/* ===== IMPORTAR FONTE FUTURISTA ===== */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+/* ===== FUNDO ===== */
 body {
-    background-color: white;
-    font-family: Arial, sans-serif;
+    background: radial-gradient(circle at top, #0f0030, #000);
+    color: #d8d8ff;
+    font-family: 'Orbitron', sans-serif;
     text-align: center;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.6s ease;
     padding-top: 50px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     min-height: 100vh;
-    transition: background-color 1s ease-in-out;
 }
 
+/* ===== CARD ===== */
+.card {
+    background: rgba(20, 0, 60, 0.45);
+    border: 1px solid rgba(0, 200, 255, 0.5);
+    box-shadow: 
+        0 0 20px rgba(0, 200, 255, 0.3),
+        0 0 40px rgba(180, 0, 255, 0.2);
+    border-radius: 12px;
+    padding: 25px;
+    width: 380px;
+    backdrop-filter: blur(6px);
+    animation: pulseNeon 4s infinite;
+}
+
+@keyframes pulseNeon {
+    0% { box-shadow: 0 0 20px rgba(0, 200, 255, 0.25); }
+    50% { box-shadow: 0 0 35px rgba(180, 0, 255, 0.35); }
+    100% { box-shadow: 0 0 20px rgba(0, 200, 255, 0.25); }
+}
+
+/* ===== INPUT ===== */
 input {
-    padding: 10px;
+    width: 90%;
+    padding: 12px;
+    margin: 12px 0;
     font-size: 16px;
-    margin: 10px 0;
+
+    background: rgba(15, 0, 40, 0.7);
+    border: 2px solid #3a00aa;
+    color: #b8aaff;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s ease;
 }
 
+input:focus {
+    border-color: #00eaff;
+    box-shadow: 0 0 10px #00eaff;
+}
+
+/* ===== BOTÕES ===== */
 button {
-    padding: 10px 20px;
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
     font-size: 16px;
-    margin: 5px;
     cursor: pointer;
+
+    background: linear-gradient(90deg, #5f00ff, #00eaff);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 button:hover {
-    opacity: 0.8;
+    transform: scale(1.05);
+    box-shadow: 0 0 12px #00eaff, 0 0 20px #5f00ff;
 }
 
-.card {
-    background-color: rgba(255, 255, 255, 0.85); 
-    max-width: 400px;
-    margin: auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
-}
-
+/* ===== MENSAGENS ===== */
 #mensagem {
-    font-weight: bold;
     font-size: 18px;
     margin-top: 20px;
+    font-weight: bold;
+    color: #00eaff;
+}
+
+#dica {
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    margin-top: 10px;
+    color: #d68bff;
+}
+
+.glitch {
+    position: relative;
+    color: #00eaff;
+    font-size: 28px;
+    animation: glitch 1s infinite;
+}
+
+@keyframes glitch {
+    0% { text-shadow: 2px 2px #ff00ff, -2px -2px #00eaff; }
+    50% { text-shadow: -2px 2px #ff00ff, 2px -2px #00eaff; }
+    100% { text-shadow: 2px -2px #ff00ff, -2px 2px #00eaff; }
 }
