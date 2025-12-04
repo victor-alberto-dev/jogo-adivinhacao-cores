@@ -26,6 +26,7 @@ Ao acertar, a cor de fundo muda para a cor correspondente.
 5. Se errar:  
    - ❌ mensagem de erro  
    - 🔄 tentativas diminuem  
+   - 🤓 você recebe dicas
 6. Se acabar as tentativas:  
    - 💀 o jogo revela a cor correta  
 7. Basta clicar **Jogar Novamente** para reiniciar
@@ -38,6 +39,7 @@ Ao acertar, a cor de fundo muda para a cor correspondente.
 - Mapeamento para cores CSS em inglês  
 - Validação de entrada  
 - Controle de tentativas  
+- Dicas a cada erro
 - Manipulação do DOM  
 - Mudança dinâmica de background
 
@@ -47,6 +49,7 @@ Ao acertar, a cor de fundo muda para a cor correspondente.
 
 | Português | CSS (Inglês) |
 |----------|-------------|
+| preto    | black|
 | vermelho | red |
 | azul     | blue |
 | verde    | green |
@@ -57,17 +60,6 @@ Ao acertar, a cor de fundo muda para a cor correspondente.
 | marrom   | brown |
 | cinza    | gray |
 | ciano    | cyan |
-
----
-
-## 🧩 Melhorias futuras
-
-- Dicas inteligentes  
-- Modo HARD com mais cores  
-- Animações de fundo  
-- Sons ao acertar e errar  
-- Ranking de pontuação  
-- Alternar idioma (PT/EN)
 
 ---
 
