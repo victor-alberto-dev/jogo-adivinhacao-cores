@@ -1,69 +1,73 @@
-# 🎨 Jogo de Adivinhação de Cores
+# 🕹️ Secret Color Game
 
-Um jogo simples e divertido onde o usuário tenta adivinhar uma cor secreta.  
-Ao acertar, a cor de fundo muda para a cor correspondente.
+Uma versão estilizada e aprimorada do clássico jogo de adivinhação, agora com uma interface **Cyberpunk Neon** e lógica mais inteligente.  
+O objetivo é simples: tente adivinhar a cor sorteada pelo sistema dentro de **3 tentativas**.
 
 ---
 
 ## 🚀 Tecnologias utilizadas
 
-- HTML
-- CSS
-- JavaScript
-- Git & GitHub
-- GitHub Pages
+- **HTML5**
+- **CSS3** (tema Cyberpunk com neon, glow e UI responsiva)
+- **JavaScript** (manipulação do DOM, eventos e lógica do jogo)
+- **Git & GitHub**
+- **GitHub Pages**
 
 ---
 
 ## 🕹️ Como jogar
 
-1. Ao iniciar, o sistema sorteia uma cor em segredo  
-2. O jogador digita uma cor em português (ex: azul, vermelho, rosa…)  
-3. O jogador tem **3 tentativas**  
-4. Se acertar:  
-   - ✔ cor de fundo muda  
-   - ✔ mensagem de sucesso aparece  
-5. Se errar:  
-   - ❌ mensagem de erro  
-   - 🔄 tentativas diminuem  
-   - 🤓 você recebe dicas
-6. Se acabar as tentativas:  
-   - 💀 o jogo revela a cor correta  
-7. Basta clicar **Jogar Novamente** para reiniciar
+1. Ao iniciar, o sistema sorteia uma cor secreta.
+2. Você digita uma cor em português (ex: azul, rosa, ciano…).
+3. Você tem **3 tentativas** para acertar.
+4. A cada erro:
+   - ❌ Uma mensagem aparece  
+   - 💡 O jogo fornece dicas inteligentes  
+5. Se acertar:
+   - 🎉 O fundo muda para a cor correta  
+   - 🔁 O botão *"Jogar Novamente"* aparece  
+6. Se errar as 3 tentativas:
+   - 💀 O jogo revela qual era a cor
 
 ---
 
-## 🧠 Lógica do jogo
+## 🧠 Lógica implementada
 
-- Array com lista de cores em português  
-- Mapeamento para cores CSS em inglês  
-- Validação de entrada  
-- Controle de tentativas  
-- Dicas a cada erro
-- Manipulação do DOM  
-- Mudança dinâmica de background
-
----
-
-## 🎯 Exemplo de mapeamento de cores
-
-| Português | CSS (Inglês) |
-|----------|-------------|
-| preto    | black|
-| vermelho | red |
-| azul     | blue |
-| verde    | green |
-| amarelo  | yellow |
-| roxo     | purple |
-| laranja  | orange |
-| rosa     | pink |
-| marrom   | brown |
-| cinza    | gray |
-| ciano    | cyan |
+- **Array com lista de cores válidas**
+- **Mapeamento PT → EN** para aplicar no CSS
+- **Sorteio pseudoaleatório com `Math.random()`**
+- **3 tentativas com decremento**
+- **Duas dicas inteligentes:**
+  - *Dica 1:* primeira letra da cor
+  - *Dica 2:* quantidade de letras
+- **Manipulação do DOM:**
+  - atualização de mensagens
+  - mudança de cor de fundo
+  - habilitar/desabilitar botões
+- **Transições suaves no visual**
 
 ---
 
-## 👨‍💻 Desenvolvedor
+## 🎨 Tema Cyberpunk
+
+O estilo visual utiliza:
+
+- Neon azul e roxo  
+- Glassmorphism suave  
+- Sombra colorida (glow)  
+- Fonte futurista **Orbitron**  
+- Botões com gradiente neon  
+- Fundo escuro elegante  
+
+## 🌐 Deploy
+
+O jogo está disponível em:
+
+🔗 **GitHub Pages:** _[Clique aqui para acessar](https://victor-alberto-dev.github.io/jogo-adivinhacao-cores/)_
+
+---
+
+## 👨‍💻 Autor
 
 **Victor Alberto**  
 Estudante de ADS — FAESA  
@@ -71,13 +75,6 @@ GitHub: https://github.com/victor-alberto-dev
 
 ---
 
-## 🌐 Deploy
-
-🔗 Link do jogo no GitHub Pages:  
-*([Clique aqui para jogar!](https://victor-alberto-dev.github.io/jogo-adivinhacao-cores/))*
-
----
-
 ## 📜 Licença
 
-Este projeto é de uso educacional para fins acadêmicos na FAESA.
+Projeto desenvolvido para fins acadêmicos, na disciplina de **Desenvolvimento Web 1** — FAESA.
