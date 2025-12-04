@@ -54,7 +54,7 @@ document.getElementById("btnAdivinhar").addEventListener("click", () => {
         if (tentativas === 2) {
             document.getElementById("mensagem").innerText = `❌ Errou! Tentativas restantes: ${tentativas} \n🤓 Dica 1: começa com "${corSorteada[0].toUpperCase()}"`;
         } else if (tentativas === 1) {
-            document.getElementById("mensagem").innerText = `❌ Errou! Tentativas restantes: ${tentativas} \n🤓 Dica 1: começa com "${corSorteada[0].toUpperCase()}" \n🔢 Dica 2: tem "${corSorteada.length}" letras`;
+            document.getElementById("mensagem").innerText = `❌ Errou! Tentativas restantes: ${tentativas} \n🤓 Dica 1: começa com "${corSorteada[0].toUpperCase()}" \n🔢 Dica 2: tem ${corSorteada.length} letras`;
         } else {
             document.getElementById("mensagem").innerText = `💀 Fim do jogo! A cor correta era: ${corSorteada}`;
             document.getElementById("btnAdivinhar").disabled = true;
